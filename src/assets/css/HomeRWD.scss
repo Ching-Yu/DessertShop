@@ -1,39 +1,23 @@
-@media (max-width: 375px){
+@media (max-width: 576px){
 
-    nav.navbar{
-        display: flex;
-        justify-content: space-between;
-        padding: 32px 34px;
-        a.navbar-cart{
-            color: $color1;
-            display: inline-block;
-            padding-top: 4px;
-        }
+    .row{
+        width: 100%;
+        margin: 0;
+    }
 
-        .navbar-toggler-icon{
-            color: $color1;
-        }
-
-        button.navbar-toggler{
-            padding: 0;
-            line-height: 30px;
-        }
-
-        a.navbar-brand{
-            padding: 0;
-        }
-
-        img{
-            width: 114px;
-            height: 17px;
-        }
+    .col-md-6{
+        padding: 0;
     }
 
     a.navbar-brand-first{
         display: none;
     }
 
-    .container-fluid{
+    .category-container{
+        top: 0;
+    }
+
+    .container{
         padding: 0;
 
         .col-12{
@@ -45,9 +29,78 @@
         .container .row{
             margin-left: 0;
         }
+
+        .col-12{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
     }
 
-    .category-container{
+    .content{
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    .content-background{
+        width: 100%;
+        height: 250px;
+        position: relative;
+        top: 0;
+    }
+
+    .content-background-second{
+        display: none;
+    }
+
+    .content-background-second-rwd-wrapper{
+        display: block;
+        background: url(../assets/images/monika-grabkowska-325047-unsplash.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .contnet-right img{
+        display: none;
+    }
+
+    .contnet-right .text-wrapper{
+        width: 100%;
+        background: $color3;
+        padding: 35px;
+        -webkit-writing-mode: horizontal-tb;
+        writing-mode: horizontal-tb;
+    }
+
+    .contnet-right p{
+        padding-right: 0;
+        line-height: 30px;
+    }
+
+    .contnet-right p:first-child{
+        padding-bottom: 30px;
+    }
+
+    .contnet-right .text-wrapper, .content .col-md-6{
+        height: auto;
+    }
+
+    .img-only{
+        display: none!important;
+    }
+
+    .cart-wrapper{
+        margin-top: 0;
+
+        .col-md-4{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        
+        .col-md-4:last-child{
+            margin-bottom: 0;
+        }
     }
 
     .category-box.col-sm-4{
@@ -62,4 +115,42 @@
         opacity: .9;
     }
 
+    .rwd-title{
+        display: block;
+    }
+
+}
+
+@media(min-width: 577px) and (max-width: 768px){
+    .content-background,.content-background-second{
+        width: 360px;
+        height: 360px;
+    }
+
+    .contnet-right img{
+        display: none;
+    }
+
+    .rwd-title{
+        display: block;
+        padding: 0!important;
+        margin-bottom: 100px;
+    }
+
+    .contnet-right .text-wrapper{
+        padding: 40px 20px;
+        line-height: 30px;
+    }
+
+    .img-only{
+        display: none!important;
+    }
+
+    .cart-wrapper{
+        .col-12{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    }
 }

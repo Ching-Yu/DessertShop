@@ -1,0 +1,217 @@
+$color1: #3F5D45;
+$color2: #FFE180;
+$color3: #EAF0ED;
+$color4: #8DA291;
+
+div.container{
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+
+.cart-detail{
+    margin-bottom: 18px;
+}
+
+h3{
+    padding: 16px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: $color1;
+    font-weight: bold;
+    background: $color3;
+}
+
+.flex-background{
+    max-width: 110px;
+    height: 110px;
+    background: url(../assets/images/brenda-godinez-367708-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+div.flex-item:nth-child(2){
+    color: $color1;
+    p{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    span{
+        font-size: 16px;
+    }
+}
+
+.flex-item-second{
+    padding: 0;
+}
+
+.button-group{
+    margin-left: 30px;
+    span{
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+    button.btn{
+        width: 48px;
+        height: 48px;
+        border-radius: 0;
+        background: transparent;
+        color: $color4;
+        font-size: 16px;
+    }
+}
+
+.flex-item-fourth{
+    color: $color1;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.flex-item-fifth{
+    a{
+        color: $color4;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.flex-background-second{
+    width: 110px;
+    height: 110px;
+    background: url(../assets/images/food-photographer-jennifer-pallian-650641-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.flex-background-third{
+    width: 110px;
+    height: 110px;
+    background: url(../assets/images/brooke-lark-96398-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.order-box{
+    background: $color1;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .d-flex{
+        padding-top: 8px;
+        span{
+         font-size: 16px;
+         color: $color4;   
+        }
+    }
+
+    .total-money {
+        padding: 16px 0;
+        span{
+            font-size: 20px;
+            font-weight: bold;
+            color: $color3;
+        }
+    }
+}
+
+.checkout-button{
+    text-align: center;
+    background: $color2;
+    
+    a{
+        width: 100%;
+        display: inline-block;
+        padding: 20px 0;
+        font-size: 24px;
+        color: $color1;
+        font-weight: bold;
+        &:hover{
+            text-decoration: none;
+            color: $color1;
+        }
+    }
+}
+
+h4{
+    padding: 16px;
+    text-align: center;
+    color: $color3;
+    font-weight: bold;
+    border-bottom: 1px solid $color3;
+}
+
+
+@media(max-width: 576px){
+    .header .col-sm-8{
+        padding: 0;
+    }
+
+    .header.container{
+        margin-bottom: 0;
+    }
+
+    .flex-background{
+        max-width: 157px;
+        height: 106px;
+    }
+
+    .button-group{
+        margin-left: 0;
+    }
+
+    .flex-item-second{
+        flex-direction: column;
+        align-items: start!important;
+    }
+
+    .flex-item-fourth{
+        border-top: 1px solid $color3;
+        border-bottom: 1px solid $color3;
+        text-align: right;
+        font-size: 20px;
+        padding: 15px 20px 15px 0;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+
+    .cart-detail{
+        .row{
+            margin: 0 30px;
+        }
+    }
+
+    .flex-item-fifth{
+        font-size: 20px;
+        display: none;
+    }
+
+    .checkout-wrapper{
+        padding: 0 0;
+        .order-box{
+            background: #fff;
+
+            h4{
+                background: $color3;
+                color: $color1;
+            }
+
+            .total-money{
+                span{
+                    color: $color1;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 575px) and (max-width:768px){
+    .button-group{
+        width: 120px;
+        margin-left: 0;
+    }
+}

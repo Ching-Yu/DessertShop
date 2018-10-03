@@ -1,0 +1,215 @@
+$color1: #3F5D45;
+$color2: #FFE180;
+$color3: #EAF0ED;
+$color4: #8DA291;
+
+*{
+  font-family: Microsoft JhengHei;
+  .fas,.fa,.far{
+      font-family: "Font Awesome 5 Free";
+  }
+}
+
+.content{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container{
+  .row{
+    .col-12{
+      height: 496px;
+      position: relative;
+      background: url(../assets/images/magda-fou-421487-unsplash.jpg);
+      background-position: 50% 50%;
+      background-size: cover;
+      padding: 0;
+    }
+  }
+}
+
+.img-absolute{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.col-md-5{
+  width: 300px;
+}
+
+.list-group{
+  text-align: center;
+  font-weight: bold;
+  width: 300px;
+  color: $color1;
+  margin-right: 0;
+  .list-group-item{
+    border-radius: 0;
+    height: 65px;
+    font-size: 24px;
+      &:hover{
+      background: $color3;
+      transition: all 
+    }
+  }
+
+  .active{
+    color: #fff;
+    background: $color1;
+
+    &:hover{
+      background: $color1;
+    }
+  }
+}
+
+div.card{
+  border: 0;
+  a.btn{
+    display: inline-block;
+    color: $color1;
+    font-weight: bold;
+    font-size: 24px;
+    background: $color3;
+    width: 100%;
+    padding: 15px
+  }
+}
+
+  div.card-body{
+    padding: 0;
+  }
+
+  .card-title{
+    padding: 20px 55px;
+    color: $color1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-img-top{
+    position: relative;
+    width: 300px;
+    height: 315px;
+    background: url(../assets/images/brenda-godinez-228182-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    span{
+      position: absolute;
+      left: 30px;
+      -webkit-writing-mode: vertical-lr;
+      writing-mode: vertical-lr;
+      padding: 10px 8px;
+      background: $color1;
+      color: #ffffff;
+      font-size: 16px;
+      letter-spacing: 5px;
+    }
+
+    i{
+      position: absolute;
+      font-size: 20px;
+      right: 22px;
+      top: 19px;
+    }
+  }
+
+  .card-img-top.second{
+    background-image: url(../assets/images/heather-schwartz-493946-unsplash.jpg);
+  }
+
+  .card-img-top.third{
+    background-image: url(../assets/images/heather-schwartz-493946-unsplash.jpg);
+  }
+
+  .card-img-top.fourth{
+    background-image: url(../assets/images/brooke-lark-96398-unsplash.jpg);
+  }
+
+  .card-img-top.fifth{
+    background-image: url(../assets/images/food-photographer-jennifer-pallian-321038-unsplash.jpg);
+  }
+
+  .card-img-top.sixth{
+    background-image: url(../assets/images/food-photographer-jennifer-pallian-650641-unsplash.jpg);
+  }
+
+
+.col-sm-4{
+  margin-bottom: 30px;
+}
+
+nav.nav-page{
+  margin-top: 14px;
+}
+
+.page-item a{
+  padding: 0;
+  text-align: center;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+}
+
+.page-item a{
+  color: $color1;
+}
+
+.page-item.active a{
+  color: #fff;
+  background: $color1;
+}
+
+@media(max-width: 576px){
+  .img-absolute{
+    width: 60px;
+  }
+
+  .header{
+    height: 277px!important;
+  }
+
+  .content{
+    margin-top: 0;
+
+    .col-md-4{
+     padding: 0 0; 
+     margin-bottom: 30px;
+    }
+
+    .list-group{
+      width: 100%;
+    }
+
+    .col-md-8 .col-sm-6{
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  ul.pagination{
+    justify-content: center!important;
+  }
+}
+
+@media(max-width:768px){
+  .list-group{
+    width: auto;
+  }
+
+  .card{
+    width: auto!important;
+
+    .card-img-top{
+      width: 210px;
+      height: 210px;
+    }
+
+    .card-title{
+      padding:20px 20px;
+    }
+  }
+}
+
